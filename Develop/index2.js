@@ -9,11 +9,47 @@ const title = {
     message: "What is the title of your project?",
     name: "Title",
 };
-// const description = 'This is a sample project.';
-// const installation = 'To install this project, run the following command: `npm install myproject`.';
-// const usage = 'To use this project, import it and call the necessary functions.';
-// const contributors = 'John Doe, Jane Smith';
-// const license = 'MIT License';
+const description = {
+    type: "input",
+    message: "Provide a brief description of your project.",
+    name: "Description",
+};
+const installation = {
+    type: "input",
+    message: "What is the application's installation process/instructions?",
+    name: "Installation instructions",
+};
+const usage = {
+    type: "input",
+    message: "What information does the user need to know about usage of the application?",
+    name: "usage",
+};
+const contributors = {
+    type: "input",
+    message: "What guidelines must the user follow when contributing to the project/application?",
+    name: "Contributing",
+};
+const tests = {
+    type: "input",
+    message: "What instructions must the user follow when testing the application?",
+    name: "Tests",
+};
+const license = {
+    type: "list",
+    message: "Under which license is your application covered under?",
+    choices: ["apache", "ms-pl", "BSD", "MIT"],
+    name: "License",
+};
+const username = {
+    type: "username",
+    message: "What is your Github username?",
+    name: "GitHub username",
+};
+const email = {
+    type: "input",
+    message: "What is your email address?",
+    name: "Email address",
+};
 
 function generateReadme(title) {
   let readmeContent = `# ${title}\n\n`;
