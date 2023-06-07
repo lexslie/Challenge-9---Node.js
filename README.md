@@ -1,4 +1,3 @@
-# Module-9-Node.js
 # 09 Node.js Challenge: Professional README Generator
 
 ## Your Task
