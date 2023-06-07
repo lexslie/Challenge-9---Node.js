@@ -65,6 +65,15 @@ function init() {
         const readmeContent = `
 # ${title}
 
+## Table of Contents
+* [Description] (#description)
+* [Installation](#installation)
+* [Usage] (#usage)
+* [Contributing] (#contributing)
+* [Tests] (#tests)
+* [License] (#license)
+* [Questions] (#questions)
+
 ## Description
 ${description}
 
@@ -72,22 +81,21 @@ ${description}
 ${installation}
 
 ## Usage
-${usage}
+${usage} 
 
-## Contributers
+## Contributing
 ${contributors}
 
 ## Tests
 ${tests}
 
 ## License 
-${license}
+${license} 
 
-## GitHub Username
-${username}
-
-## Email
-${email}
+## Questions
+Please contact me with any questions through my GitHub or email address provided below:
+- GitHub: ${username} 
+- Email: ${email}
 `;
 
         writeToFile('README.md', readmeContent, (err) => {
