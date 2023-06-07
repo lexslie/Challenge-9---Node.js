@@ -51,17 +51,23 @@ const email = {
     name: "Email address",
 };
 
-function generateReadme(title) {
+
+// Function to write README file
+function generateReadme(title, description, installation, usage, contributors, tests, license, username, email) {
   let readmeContent = `# ${title}\n\n`;
-//   readmeContent += `## Description\n\n${description}\n\n`;
-//   readmeContent += `## Installation\n\n${installation}\n\n`;
-//   readmeContent += `## Usage\n\n${usage}\n\n`;
-//   readmeContent += `## Contributors\n\n${contributors}\n\n`;
-//   readmeContent += `## License\n\n${license}\n\n`;
+  readmeContent += `## Description\n\n${description}\n\n`;
+  readmeContent += `## Installation\n\n${installation}\n\n`;
+  readmeContent += `## Usage\n\n${usage}\n\n`;
+  readmeContent += `## Contributors\n\n${contributors}\n\n`;
+  readmeContent += `## Tests\n\n${tests}\n\n`;
+  readmeContent += `## License\n\n${license}\n\n`;
+  readmeContent += `## Username\n\n${username}\n\n`;
+  readmeContent += `## Email\n\n${email}\n\n`;
   return readmeContent;
 }
 
-const readmeContent = generateReadme(title);
+const readmeContent = generateReadme(title, description, installation, usage, contributors, tests, license, username, email);
+
 
 fs.writeFile('README.md', readmeContent, (err) => {
     if (err) {
