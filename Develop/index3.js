@@ -30,8 +30,8 @@ const questions = [
     message: "What instructions must the user follow when testing the application?",
     name: "Tests",
     },
-    {type: "List",
-    message: "Under which license is your application covered under?",
+    {type: "list",
+    message: "Under which license is your application covered?",
     choices: ["apache", "ms-pl", "BSD", "MIT"],
     name: "License",
     },
@@ -46,19 +46,45 @@ const questions = [
 ];
 
 
-// TODO: Create a function to write README file
+// Function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) => {
         if (err) {
           console.error(err);
           return;
         }
-        console.log(`${fileName} has been generated successfully!`);
-      });
+        console.log(`${fileName} has been generated.`);
+    });
 }
 
-// TODO: Create a function to initialize app
-function init() {}
+// Function to initialize app
+function init() {
+    inquirer.prompt(questions).then(answers => {
+        const { title, description, installation, usage, contributors, tests, license, username, email } = answers;
+  
+        let readmeContent = `# ${title}\n\n`;
+        readmeContent += `## Description\n\n${description}\n\n`;
+        readmeContent += `## Installation\n\n${installation}\n\n`;
+        readmeContent += `## Usage\n\n${usage}\n\n`;
+        readmeContent += `## Contributors\n\n${contributors}\n\n`;
+        readmeContent += `## Tests\n\n${tests}\n\n`;
+        readmeContent += `## License\n\n${license}\n\n`;
+        readmeContent += `## Username\n\n${username}\n\n`;
+        readmeContent += `## Email\n\n${email}\n\n`;
+
+        writeToFile('README.md', readmeContent, (err) => {
+            if (err) {
+              console.error(err);
+              return;
+            }
+            console.log ('README has been generated successfully!');
+        });
+    })
+    .catch(error => {
+        console.error(error);
+    });
+}
+
 
 // Function call to initialize app
 init();
