@@ -66,13 +66,13 @@ function init() {
 # ${title}
 
 ## Table of Contents
-* [Description] (#description)
+* [Description](#description)
 * [Installation](#installation)
-* [Usage] (#usage)
-* [Contributing] (#contributing)
-* [Tests] (#tests)
-* [License] (#license)
-* [Questions] (#questions)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [License](#license)
+* [Questions](#questions)
 
 ## Description
 ${description}
@@ -93,8 +93,11 @@ ${tests}
 ${license} 
 
 ## Questions
-Please contact me with any questions through my GitHub or email address provided below:
-- GitHub: ${username} 
+Please feel welcomed to reach out through my GitHub or email address provided below:
+
+- GitHub: [${username}] 
+(https://github.com/${username}/).
+
 - Email: ${email}
 `;
 
