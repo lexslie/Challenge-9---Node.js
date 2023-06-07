@@ -58,6 +58,7 @@ Here are some guidelines to help you get started:
 * Refer to the [Fullstack Blog Video Submission Guide](https://coding-boot-camp.github.io/full-stack/computer-literacy/video-submission-guide) for additional guidance on creating a video.
 
 * Include any other screenshots you deem necessary to help someone who has never been introduced to your application understand the purpose and function of it. This is how you will communicate to potential employers or other developers in the future what you built and why, and to show how it works.
+![terminal screenshot](./Develop/assets/Screenshot%202023-06-07%20at%202.53.45%20PM.png)
 
 ## Grading Requirements
 
@@ -88,6 +89,8 @@ This Challenge is graded based on the following criteria:
 * The walkthrough video must demonstrate how a user would enter responses to all of the prompts in the application.
 
 * The walkthrough video must demonstrate a generated README that matches the user input and has a functioning table of contents.
+
+* [Demonstration video](https://drive.google.com/file/d/1elOq2ekKQtlII7lDxtyZBUAT9AwO_tLa/view)
 
 ### Technical Acceptance Criteria: 40%
 
